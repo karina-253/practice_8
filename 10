@@ -1,0 +1,9 @@
+N = int(input())
+
+for num in range(1, N + 1):
+    perfect_num = 0
+    for i in range(1, num //2 + 1):
+        if num % i == 0:
+           perfect_num += i
+    if perfect_num == num:
+        print(num)
