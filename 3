@@ -1,0 +1,13 @@
+income = int(input())
+citizens = 0
+total_income = 0
+
+while income != 0:
+    total_income += income
+    citizens += 1
+    income = int(input())
+if citizens > 0:
+    print(total_income/citizens)
+else:
+    print(0)
+    
