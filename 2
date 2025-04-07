@@ -1,0 +1,10 @@
+score = int(input())
+friends = 1
+winner = 0
+
+while score  != -1:
+    if score > winner:
+      winner = score
+    score = int(input())
+    friends += 1
+print(friends - 1)
