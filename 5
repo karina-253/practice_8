@@ -1,1 +1,11 @@
+N = int(input())
+k = 0
 
+for num in range(1, N + 1):
+    perfect_numbers = 0
+    for i in range(1, num // 2 + 1):
+        if num % i == 0:
+            perfect_numbers += i
+    if perfect_numbers == num:
+      k += 1
+print(k)
